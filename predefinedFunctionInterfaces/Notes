@@ -1,0 +1,70 @@
+
+=> In java.util.Function package all the predefined functional interfaces are available
+
+1) Predicate   :- If you want to check some conditional checks then predicate we use. it return true or false
+2) Function    :- It take input from user,perform operation and return result back to user.
+3) Consumer    :- It is used to consumes something i.e it perform printing op, storing data into db etc.
+4) Supplier    :- It is used to supply some objects.
+
+
+1) Predicate :-This is a functional Interface which is available in java.util.Function package
+
+              It has abstract only one Method
+
+                 @functionalInterface
+                 interface predicate<T t>              // T is Input type
+                 {
+                 public boolean test(T t);
+                 }
+
+              eg:
+                String[] str={"govind","bhosle","Seema","Afjal"};
+                Predicate<String> p=str->s.length>5;
+                for(String s: str){
+                  if(p.test(s){
+                   System.out.println(s);
+                }
+            }
+
+2) Function :- It is also a functional interface , it has only one method.
+
+              @functionalInterface
+              interface Function<T,R>{      //T is input type         // R is return type
+              public R apply(T t);
+              }
+
+          eg:
+           Q.1) calculate square of given number
+               Function<Integer,Integer> ft=i->i*i;
+               System.out.println(ft.apply(5));             // 25
+
+          eg:
+          Q.2) find length of given string
+               Function<String ,Integer> pp=str->str.length();
+               System.out.println(pp.apply("govind");     // 6
+
+
+
+3) Consumer :- It is also a functional interface which consumes something but it doesn't return anything.
+               It's return type is void.
+               It is generally used for printing purpose or values storing values into database.
+
+              @functionalInterface
+              function Consumer(T t){
+                  public void accept(T t);
+              }
+
+            eg: Q.1 ) Take String from user and print it on console
+
+             Consumer<String> cons=i->System.out.println(t);
+                   cons.accept("Satish");
+
+
+4) Supplier :- It is also a functional interface which supply  objects.
+               It's return type is T i.e any type of data it return
+               It doesn't take any argument
+
+                @functionalInterface
+               interface Supplier<T>{
+                  public R get();
+               }

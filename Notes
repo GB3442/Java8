@@ -1,0 +1,46 @@
+===================== Java 8 Features ===============
+
+1) Lambda Expression
+2) Functional Interface
+3) Method References
+4) Stream API's
+5) Optional classes
+6) Date and Time API's
+7) Collection improvement i.e removeIf , replaceAll
+8) Default method and static method
+9) predefined functional interfaces i.e Function , consumer, producer,supplier
+10)Method reference
+11)Optional Classes
+12)Nashron javascript engine
+
+
+====== Lambda Expression =========
+
+Q.1 )  What is lambda expression ?
+ans : - Lambda expresssion is nothing but a Anonymous function which doesn't having a name,return type and modifiers.
+         or Lambda expression is basically an instance of a functional interface. or we can say it provide clear and
+         concise way to represent a method of functional interface using an expression.
+
+Q.2 ) Why we use Lambda Expression ?
+ans : - To write a clear and concise code.
+
+Q.3) What is syntax of lambda expression ?
+ans : ()-> expression
+      eg.
+      // this is normal method
+      public void show(){
+      System.out.println("hello");
+      }
+      // this is lambda expression for above method.
+      ()->System.out.println("hello");
+
+Q.4) WHat is functional interface ?
+ans: A interface which contain only one abstract method are called as functional interface.
+     It is also called as SAM i.e Single Abstract Method
+     => To represent an interface as functional interface we use @functionalInterface
+
+Q.5 ) what are predefined functional Interfaces in java ?
+ans : Callable => call() , comparable =>compareTo(), comparator => compare(), ActionListener Actionperformed(),
+      Runnable => run() etc.
+
+Q.6)

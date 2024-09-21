@@ -1,0 +1,19 @@
+
+Q.1)  is Default methods in java ?
+ans : a method declares with modifire default is called as default method.
+
+Q.2)  Default method with respect to java8 ?
+ans :  Before java8 interface can contain only public abstract methods only but, from java 8 we can add static and
+       default methods inside interface.
+
+Q.3) Why we use dafault methods in interface ?
+ans : Default methods were introduced to provide backward compatibility for old interfaces ,so that they can have
+      new methods without affecting existing code.
+      or in other words we can say that without affecting implementation classes of interface if we want to add a new
+      method inside interface that time we use default method.
+
+Q.4 ) WHat is static method with respective of interfaces ?
+ans : To define general utility methods inside an interface we are use static methods.
+
+
+
